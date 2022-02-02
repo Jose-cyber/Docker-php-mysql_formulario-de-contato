@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <title>Formulario</title>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+h2 {
+  color: maroon;
+  margin-left: 40px;
+} 
+input{
+  width: 230px;
+  height: 30px;
+}
+button{
+      width: 240px;
+      height: 40px;
+      background-color: rgb(99, 197, 0);
+}
+.backgroud_form{
+      height: 500px;
+      width: 390px;
+      background-color: white;
+      border-radius: 10%;
+      margin-left: 40%;
+}
+form{
+      margin-left: 70px;
+      margin-top: 50px;
+}
+a{
+      margin-left: 70px;
+}
+</style>
+</head>
+<body>
+
+<h1>Formulario</h1>
+<hr>
+<div class="backgroud_form">
+      <h2>Contato</h2>
+            <form method="post" action="envio.php">
+                  Digite seu nome:<br>
+                  <input type="text" required="" name="nome" /><br>
+                  <br>
+                  Digite seu E-mail:<br>
+                  <input type="text" required="" name="email" /><br>
+                  <br>
+                  Digite seu Numero de telefone:<br>
+                  <input type="text" required="" name="telefone" /><br>
+                  <br>  
+                  Digite sua mensagem:<br>
+                  <input type="text" required="" name="mensagem" /><br>
+                  <br>
+                  <button type="submit" value="Enviar">Enviar</button>
+                  <br>
+                  <br>
+            </form> 
+            <a href="consulta.php"><button>Consulta</button></a>
+</div>
+
+</body>
+</html>

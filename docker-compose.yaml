@@ -1,0 +1,20 @@
+version: "3"
+services:
+  php_web:
+    build: .
+    container_name: php_web
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+    links: 
+      - db_mysql  
+
+  db_mysql:
+    image: mysql:5.7
+    container_name: db_mysql
+    volumes:
+    - ./db_data:/var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=123abc.
+    - MYSQL_DATABASE=FORM_SITE
